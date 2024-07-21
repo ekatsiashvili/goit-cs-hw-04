@@ -2,7 +2,7 @@ import multiprocessing
 from multiprocessing import Queue
 from collections import defaultdict
 import time
-from docx import Document  
+from docx import Document  # Імплементуємо Document з бібліотеки python-docx
 
 def search_keywords_in_files(file_paths, keywords, queue):
     local_results = defaultdict(list)
