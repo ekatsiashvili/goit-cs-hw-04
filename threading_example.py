@@ -1,7 +1,7 @@
 import threading
 import os
 import time
-from docx import Document 
+from docx import Document # Імплементуємо Document з бібліотеки python-docx
 
 def search_in_files(file_paths, keywords):
     results = {keyword: [] for keyword in keywords}
