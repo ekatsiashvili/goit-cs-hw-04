@@ -18,7 +18,7 @@ def search_keywords_in_files(file_paths, keywords, queue):
     queue.put(local_results)
 
 def multiprocessing_search(file_paths, keywords):
-    num_processes = min(4, len(file_paths))  # Avoid more processes than files
+    num_processes = min(4, len(file_paths)) 
     processes = []
     queue = Queue()
     results = defaultdict(list)
